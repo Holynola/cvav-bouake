@@ -1,5 +1,6 @@
 Orange : #ff6633
 Vert : #339933
 Bleu : #1360a0
+Bleu ciel : #279cfb
 Rouge : #b22e2e
 Blanc : #e9eef2

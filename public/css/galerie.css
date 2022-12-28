@@ -1,0 +1,22 @@
+body {
+    background-color: #212529;
+}
+
+header {
+    box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.1);
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+    margin: 150px 0 50px;
+    color: #fff;
+    font-family: 'Cooper Black';
+}
+
+@media (max-width: 600px) {
+    h3 {
+        font-size: 35px;
+        margin-top: 200px;
+    }
+}

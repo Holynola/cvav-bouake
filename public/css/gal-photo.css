@@ -1,0 +1,123 @@
+.img-option {
+    display: none;
+}
+
+#option {
+    width: 250px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 600;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+#option option {
+    color: #000;
+}
+
+.photo-box {
+    width: 1300px;
+    display: flex;
+    margin: 30px auto 100px;
+}
+
+.photo-left, .photo-right {
+    border: 3px solid rgba(0,0,0,0.1);
+    box-shadow: 15px 7px 11px 0px rgba(0,0,0,0.1);
+}
+
+.photo-left {
+    width: 300px;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.photo-left ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    text-align: right;
+    padding: 10px 10px 10px 0;
+}
+
+.photo-left ul li a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.photo-right {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 20px 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.photo-right a {
+    width: 280px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 20px 0 0 20px;
+}
+
+.photo-right img {
+    width: 100%;
+    height: 100%;
+    transition: .3s linear;
+}
+
+.photo-right img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1330px) {
+    .photo-box {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .img-option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .photo-left {
+        display: none;
+    }
+
+    .photo-right {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #option {
+        width: 70%;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .photo-box {
+        width: 100%;
+    }
+
+    .photo-right {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        box-shadow: none;
+    }
+
+    .photo-right a {
+        width: 80%;
+    }
+}
