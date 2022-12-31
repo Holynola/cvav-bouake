@@ -7,7 +7,7 @@
     <title>Effectifs | CV-AV Bouaké</title>
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../public/css/all.css">
-    <link rel="stylesheet" href="../public/css/work.css">
+    <link rel="stylesheet" href="../public/css/design.css">
 </head>
 <body>
     <?php require_once '../public/php/header.html' ; ?>

@@ -2,6 +2,10 @@ body {
     background-color: #e9eef2;
 }
 
+header {
+    background-color: #1360a0;
+}
+
 .design {
     width: 100%;
     display: flex;

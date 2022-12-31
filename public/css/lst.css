@@ -1,0 +1,40 @@
+.list-section h4 {
+    font-size: 35px;
+    text-align: center;
+    color: #1360a0;
+}
+
+.list-section h5 {
+    font-size: 24px;
+    text-align: center;
+    color: #c31111;
+}
+
+.list-section hr {
+    border: 1px solid #000;
+    margin: 20px 0 30px;
+}
+
+.list-div {
+    display: flex;
+    justify-content: center;
+}
+
+.list-div div {
+    border: 1px solid #000;
+}
+
+.name-box {
+    width: 250px;
+    height: 200px;
+}
+
+.doy-box {
+    width: 350px;
+    height: 200px;
+}
+
+.btn-box {
+    width: 150px;
+    height: 200px;
+}
