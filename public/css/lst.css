@@ -21,20 +21,53 @@
 }
 
 .list-div div {
-    border: 1px solid #000;
+    text-align: center;
+    padding: 7px;
+}
+
+.name-box i, .doy-box i {
+    font-size: 24px;
+    color: #ff6633;
+}
+
+.name-box span, .doy-box span {
+    font-size: 18px;
+    margin-left: 5px;
 }
 
 .name-box {
-    width: 250px;
-    height: 200px;
+    width: 200px;
 }
 
 .doy-box {
     width: 350px;
-    height: 200px;
 }
 
 .btn-box {
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-box a {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 9px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn-box a:nth-child(1) {
+    background-color: #1360a0;
+    margin-right: 20px;
+}
+
+.btn-box a:nth-child(2) {
+    background-color: #339933;
+    margin-right: 20px;
+}
+
+.btn-box a:nth-child(3) {
+    background-color: #c31111;
 }
