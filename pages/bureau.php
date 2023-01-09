@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="../public/css/design.css">
 </head>
 <body>
-<?php require_once '../public/php/header.html' ; ?>
+    <?php require_once '../public/php/header.html' ; ?>
 
-<div class="design">
-    <div class="bloc-design">
-        <?php require_once '../public/php/bur.html' ; ?>
-        <?php require_once '../public/php/aside.html' ; ?>
+    <div class="design">
+        <div class="bloc-design">
+            <?php require_once '../public/php/bur.html' ; ?>
+            <?php require_once '../public/php/aside.html' ; ?>
+        </div>
     </div>
-</div>
 
-<?php require_once '../public/php/footer.html' ; ?>
+    <?php require_once '../public/php/footer.html' ; ?>
 </body>
 </html>
