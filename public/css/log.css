@@ -1,0 +1,78 @@
+.log-title {
+    font-size: 40px;
+    font-family: 'Cooper Black';
+    text-align: center;
+    color: #1360a0;
+    margin-bottom: 20px;
+}
+
+.sign-title {
+    font-size: 25px;
+    text-align: center;
+    margin: 70px 0 20px;
+}
+
+.box {
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.box label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box input,
+.box select {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.box button {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+
+.box button:hover,
+.box button:focus {
+    background-color: #1360a0;
+}
+
+@media (max-width: 450px) {
+    .log-title {
+        font-size: 30px;
+    }
+
+    .sign-title {
+        font-size: 20px;
+    }
+
+    .box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .box label {
+        font-size: 16px;
+    }
+
+    .box input,
+    .box select,
+    .box button {
+        font-size: 14px;
+    }
+}
