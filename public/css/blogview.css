@@ -1,0 +1,22 @@
+.blog-content {
+    display: flex;
+    width: 100%;
+}
+
+.content-left {
+    width: 30%;
+    height: 800px;
+    border: 1px solid #000;
+}
+
+.left-top {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.content-right {
+    width: 70%;
+    height: 800px;
+    border: 1px solid #000;
+}
