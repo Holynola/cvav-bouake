@@ -1,0 +1,47 @@
+.old h4 {
+    font-size: 35px;
+    color: #c31111;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.old h5 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.old hr {
+    width: 1px solid #000;
+    width: 20%;
+}
+
+.old div {
+    margin-top: 10px;
+}
+
+.old a {
+    font-size: 18px;
+    transition: 0.2s linear;
+}
+
+.old a:focus,
+.old a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+    .old h4 {
+        font-size: 24px;
+    }
+
+    .old h5 {
+        font-size: 20px;
+    }
+
+    .old a {
+        font-size: 14px;
+    }
+}
