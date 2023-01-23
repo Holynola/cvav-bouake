@@ -3,28 +3,7 @@
     text-align: center;
     font-family: 'Cooper Black';
     color: #1360a0;
-    margin-bottom: 50px;
-}
-
-.eff-add {
     margin-bottom: 30px;
-}
-
-.eff-add a {
-    padding: 5px 15px;
-    margin-right: 20px;
-    outline: none;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 18px;
-    transition: .3s linear;
-    background-color: #1360a0;
-    color: #fff;
-}
-
-.eff-add a:hover,
-.eff-add a:focus {
-    transform: scale(1.05);
 }
 
 .pasto-div {

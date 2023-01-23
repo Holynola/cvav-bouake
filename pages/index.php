@@ -31,6 +31,11 @@
     <!-- Contacts -->
     <?php require_once '../public/php/contact.html' ; ?>
 
+    <!-- Bouton pour rediriger vers la page Contacts -->
+    <div class="btn-contact">
+        <a href="contacts.php">Envoyer un message au BD</a>
+    </div>
+
     <!-- Footer -->
     <?php require_once '../public/php/footer.html' ; ?>
 </body>

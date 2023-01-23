@@ -1,10 +1,20 @@
+@font-face {
+    src: url(../fonts/calibri-regular.ttf);
+    font-family: Calibri;
+}
+
+@font-face {
+    font-family: 'Cooper Black';
+    src: url(../fonts/Cooper-Black-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: Calibri;
+    font-family: Calibri; 
 }
 
 html {
@@ -14,4 +24,22 @@ html {
 a {
     cursor: pointer;
     color: inherit;
+}
+
+.btn-contact {
+    display: flex;
+    justify-content: center;
+    margin: -20px 0 70px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width: 300px) {
+    .btn-contact {
+        font-size: 16px;
+        margin: -50px 0 80px;
+    }
 }
