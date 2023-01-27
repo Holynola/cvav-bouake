@@ -1,3 +1,7 @@
+<?php
+    include('../control/dbConf.php');
+    include('../control/eff-ex.php');
+?>
 <style>
     @import url("../public/css/eff.css");
 </style>
@@ -14,7 +18,7 @@
 
     <div class="eff-div">
         <div class="eff-box" id="benjamins">
-            <h4>Benjamins : 000</h4>
+            <h4>Benjamins : <?= $benjamins ?></h4>
             <hr>
 
             <table>
@@ -23,19 +27,19 @@
                 </tr>
                 <tr>
                     <td>Monseigneur Vital Komenan YAO</td>
-                    <td>000</td>
+                    <td><?= $ben[0] ?></td>
                 </tr>
                 <tr>
                     <td>Monseigneur André Duirat</td>
-                    <td>000</td>
+                    <td><?= $ben[1] ?></td>
                 </tr>
                 <tr>
                     <td>Père Alfred Kouakou</td>
-                    <td>00</td>
+                    <td><?= $ben[2] ?></td>
                 </tr>
                 <tr>
                     <td>Père Adrien Jeanne</td>
-                    <td>00</td>
+                    <td><?= $ben[3] ?></td>
                 </tr>
             </table>
 
@@ -45,7 +49,7 @@
         </div>
         
         <div class="eff-box" id="cadets">
-            <h4>Cadets : 000</h4>
+            <h4>Cadets : <?= $cadets ?></h4>
             <hr>
 
             <table>
@@ -54,19 +58,19 @@
                 </tr>
                 <tr>
                     <td>Monseigneur Vital Komenan YAO</td>
-                    <td>000</td>
+                    <td><?= $cad[0] ?></td>
                 </tr>
                 <tr>
                     <td>Monseigneur André Duirat</td>
-                    <td>000</td>
+                    <td><?= $cad[1] ?></td>
                 </tr>
                 <tr>
                     <td>Père Alfred Kouakou</td>
-                    <td>00</td>
+                    <td><?= $cad[2] ?></td>
                 </tr>
                 <tr>
                     <td>Père Adrien Jeanne</td>
-                    <td>00</td>
+                    <td><?= $cad[3] ?></td>
                 </tr>
             </table>
 
@@ -76,7 +80,7 @@
         </div>
         
         <div class="eff-box" id="aines">
-            <h4>Ainés : 000</h4>
+            <h4>Ainés : <?= $aines ?></h4>
             <hr>
 
             <table>
@@ -85,19 +89,19 @@
                 </tr>
                 <tr>
                     <td>Monseigneur Vital Komenan YAO</td>
-                    <td>000</td>
+                    <td><?= $ain[0] ?></td>
                 </tr>
                 <tr>
                     <td>Monseigneur André Duirat</td>
-                    <td>000</td>
+                    <td><?= $ain[1] ?></td>
                 </tr>
                 <tr>
                     <td>Père Alfred Kouakou</td>
-                    <td>00</td>
+                    <td><?= $ain[2] ?></td>
                 </tr>
                 <tr>
                     <td>Père Adrien Jeanne</td>
-                    <td>00</td>
+                    <td><?= $ain[3] ?></td>
                 </tr>
             </table>
 
@@ -107,7 +111,7 @@
         </div>
         
         <div class="eff-box" id="meneurs">
-            <h4>Meneurs : 000</h4>
+            <h4>Meneurs : <?= $meneurs ?></h4>
             <hr>
 
             <table>
@@ -116,19 +120,19 @@
                 </tr>
                 <tr>
                     <td>Monseigneur Vital Komenan YAO</td>
-                    <td>000</td>
+                    <td><?= $men[0] ?></td>
                 </tr>
                 <tr>
                     <td>Monseigneur André Duirat</td>
-                    <td>000</td>
+                    <td><?= $men[1] ?></td>
                 </tr>
                 <tr>
                     <td>Père Alfred Kouakou</td>
-                    <td>00</td>
+                    <td><?= $men[2] ?></td>
                 </tr>
                 <tr>
                     <td>Père Adrien Jeanne</td>
-                    <td>00</td>
+                    <td><?= $men[3] ?></td>
                 </tr>
             </table>
 
@@ -138,7 +142,7 @@
         </div>
         
         <div class="eff-box" id="aas">
-            <h4>Aspirants Accompagnateurs : 000</h4>
+            <h4>Aspirants Accompagnateurs : <?= $aas ?></h4>
             <hr>
 
             <table>
@@ -147,19 +151,19 @@
                 </tr>
                 <tr>
                     <td>Monseigneur Vital Komenan YAO</td>
-                    <td>000</td>
+                    <td><?= $aa[0] ?></td>
                 </tr>
                 <tr>
                     <td>Monseigneur André Duirat</td>
-                    <td>000</td>
+                    <td><?= $aa[1] ?></td>
                 </tr>
                 <tr>
                     <td>Père Alfred Kouakou</td>
-                    <td>00</td>
+                    <td><?= $aa[2] ?></td>
                 </tr>
                 <tr>
                     <td>Père Adrien Jeanne</td>
-                    <td>00</td>
+                    <td><?= $aa[3] ?></td>
                 </tr>
             </table>
 
@@ -169,7 +173,7 @@
         </div>
         
         <div class="eff-box" id="acs">
-            <h4>Accompagnateurs : 000</h4>
+            <h4>Accompagnateurs : <?= $acs ?></h4>
             <hr>
 
             <table>
@@ -178,19 +182,19 @@
                 </tr>
                 <tr>
                     <td>Monseigneur Vital Komenan YAO</td>
-                    <td>000</td>
+                    <td><?= $ac[0] ?></td>
                 </tr>
                 <tr>
                     <td>Monseigneur André Duirat</td>
-                    <td>000</td>
+                    <td><?= $ac[1] ?></td>
                 </tr>
                 <tr>
                     <td>Père Alfred Kouakou</td>
-                    <td>00</td>
+                    <td><?= $ac[2] ?></td>
                 </tr>
                 <tr>
                     <td>Père Adrien Jeanne</td>
-                    <td>00</td>
+                    <td><?= $ac[3] ?></td>
                 </tr>
             </table>
 
@@ -200,7 +204,7 @@
         </div>
         
         <div class="eff-box" id="aps">
-            <h4>Accompagnateurs Principaux : 000</h4>
+            <h4>Accompagnateurs Principaux : <?= $aps ?></h4>
             <hr>
 
             <table>
@@ -209,19 +213,19 @@
                 </tr>
                 <tr>
                     <td>Monseigneur Vital Komenan YAO</td>
-                    <td>000</td>
+                    <td><?= $ap[0] ?></td>
                 </tr>
                 <tr>
                     <td>Monseigneur André Duirat</td>
-                    <td>000</td>
+                    <td><?= $ap[1] ?></td>
                 </tr>
                 <tr>
                     <td>Père Alfred Kouakou</td>
-                    <td>00</td>
+                    <td><?= $ap[2] ?></td>
                 </tr>
                 <tr>
                     <td>Père Adrien Jeanne</td>
-                    <td>00</td>
+                    <td><?= $ap[3] ?></td>
                 </tr>
             </table>
 
@@ -231,7 +235,7 @@
         </div>
 
         <div class="eff-box" id="total">
-            <h4>Tous les militants : 0000</h4>
+            <h4>Tous les militants : <?= $all ?></h4>
             <hr>
 
             <table>
@@ -240,19 +244,19 @@
                 </tr>
                 <tr>
                     <td>Monseigneur Vital Komenan YAO</td>
-                    <td>000</td>
+                    <td><?= $all1 ?></td>
                 </tr>
                 <tr>
                     <td>Monseigneur André Duirat</td>
-                    <td>000</td>
+                    <td><?= $all2 ?></td>
                 </tr>
                 <tr>
                     <td>Père Alfred Kouakou</td>
-                    <td>00</td>
+                    <td><?= $all3 ?></td>
                 </tr>
                 <tr>
                     <td>Père Adrien Jeanne</td>
-                    <td>00</td>
+                    <td><?= $all4 ?></td>
                 </tr>
             </table>
 
