@@ -2,12 +2,18 @@
 
 include('dbConf.php');
 
+if (isset($anpast)) {
+    $anpasto = $anpast;
+} else {
+    $anpasto = 2;
+}
+
 for ($i = 1; $i < 14; $i++) {
     $query = "SELECT * FROM fiche WHERE anpasto = :anpasto AND niveau = :niveau";
     $repList = $bdd->prepare($query);
     $repList->execute(
         array (
-            'anpasto' => 1,
+            'anpasto' => $anpasto,
             'niveau' => $i
         )
     );

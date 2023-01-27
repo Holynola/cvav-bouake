@@ -1,22 +1,27 @@
 <?php
     include('../control/dbConf.php');
+
+    $anpast = ($_GET['anpasto']);
+
     include('../control/eff-ex.php');
 ?>
 <style>
     @import url("../public/css/eff.css");
 </style>
 
+<script src="../public/js/work.js"></script>
+
 <section class="eff-section">
     <h3>Effectifs</h3>
 
     <div class="pasto-div">
-        <select name="pasto-select" id="pasto-select">
-            <option value="#">2022-2023</option>
-            <option value="#">2021-2022</option>
+        <select name="pasto-select" id="pasto-select"> 
+            <option value="2" <?php if($anpast == 2){echo 'selected';} ?>>2022-2023</option>
+            <option value="1" <?php if($anpast == 1){echo 'selected';} ?>>2021-2022</option>
         </select>
     </div>
 
-    <div class="eff-div">
+    <div class="eff-div" id="eff-div">
         <div class="eff-box" id="benjamins">
             <h4>Benjamins : <?= $benjamins ?></h4>
             <hr>
