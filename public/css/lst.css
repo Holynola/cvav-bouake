@@ -19,6 +19,7 @@
 .list-div {
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .list-div div {
@@ -38,6 +39,10 @@
 
 .name-box {
     width: 200px;
+}
+
+.name-box span {
+    text-transform: uppercase;
 }
 
 .doy-box {
@@ -71,4 +76,38 @@
 
 .btn-box a:nth-child(3) {
     background-color: #c31111;
+}
+
+@media (max-width: 550px) {
+    .list-section h4 {
+        font-size: 24px;
+    }
+
+    .list-section h5 {
+        font-size: 20px;
+    }
+    
+    .list-div {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .list-div div {
+        padding: 0;
+    }
+
+    .name-box,
+    .doy-box,
+    .btn-box {
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    .name-box span, .doy-box span {
+        font-size: 16px;
+    }
+
+    .btn-box a {
+        font-size: 16px;
+    }
 }

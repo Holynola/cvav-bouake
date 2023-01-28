@@ -21,7 +21,5 @@
     </div>
 
     <?php require_once '../public/php/footer.html' ; ?>
-
-    
 </body>
 </html>

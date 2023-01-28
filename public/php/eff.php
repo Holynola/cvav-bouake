@@ -49,7 +49,7 @@
             </table>
 
             <div class="eff-btn">
-                <a href="list.php">Voir la liste</a>
+                <a href="list.php?anneepasto=<?= $anpasto ;?>&amp;niveau=1">Voir la liste</a>
             </div>
         </div>
         
@@ -80,7 +80,7 @@
             </table>
 
             <div class="eff-btn">
-                <a href="#">Voir la liste</a>
+                <a href="list.php?anneepasto=<?= $anpasto ;?>&amp;niveau=2">Voir la liste</a>
             </div>
         </div>
         
@@ -111,7 +111,7 @@
             </table>
 
             <div class="eff-btn">
-                <a href="#">Voir la liste</a>
+                <a href="list.php?anneepasto=<?= $anpasto ;?>&amp;niveau=3">Voir la liste</a>
             </div>
         </div>
         
@@ -142,7 +142,7 @@
             </table>
 
             <div class="eff-btn">
-                <a href="#">Voir la liste</a>
+                <a href="list.php?anneepasto=<?= $anpasto ;?>&amp;niveau=4">Voir la liste</a>
             </div>
         </div>
         
@@ -173,7 +173,7 @@
             </table>
 
             <div class="eff-btn">
-                <a href="#">Voir la liste</a>
+                <a href="list.php?anneepasto=<?= $anpasto ;?>&amp;niveau=7">Voir la liste</a>
             </div>
         </div>
         
@@ -204,7 +204,7 @@
             </table>
 
             <div class="eff-btn">
-                <a href="#">Voir la liste</a>
+                <a href="list.php?anneepasto=<?= $anpasto ;?>&amp;niveau=10">Voir la liste</a>
             </div>
         </div>
         
@@ -235,7 +235,7 @@
             </table>
 
             <div class="eff-btn">
-                <a href="#">Voir la liste</a>
+                <a href="list.php?anneepasto=<?= $anpasto ;?>&amp;niveau=13">Voir la liste</a>
             </div>
         </div>
 
@@ -266,7 +266,7 @@
             </table>
 
             <div class="eff-btn">
-                <a href="#">Voir la liste</a>
+                <a href="list.php?anneepasto=<?= $anpasto ;?>&amp;niveau=20">Voir la liste</a>
             </div>
         </div>
     </div>
