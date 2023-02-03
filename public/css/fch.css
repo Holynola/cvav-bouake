@@ -119,15 +119,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 25%;
     padding: 5px;
     font-size: 16px;
     text-align: center;
 }
 
+.pos-info a {
+    color: #fff;
+    background-color: #c31111;
+    padding: 5px 8px 3px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
 .pos-one,
 .pos-two,
-.pos-three {
+.pos-three,
+.pos-four {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
@@ -135,6 +144,11 @@
 .pos-two span,
 .pos-three span {
     color: #c31111;
+    font-weight: 600;
+}
+
+.pos-four span {
+    color: #1360a0;
     font-weight: 600;
 }
 
@@ -193,7 +207,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 730px) {
     .fch-title {
         font-size: 20px;
     }
@@ -241,7 +255,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 470px) {
     .par-info,
     .pos-info {
         flex-direction: column;

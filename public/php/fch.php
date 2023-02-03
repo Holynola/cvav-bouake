@@ -5,6 +5,7 @@
 
     include('../control/fiches.php');
 ?>
+
 <style>
     @import url("../public/css/fch.css");
 </style>
@@ -76,7 +77,7 @@
                         <span>Année Pastorale</span>
                     </div>
                     <div class="info-two">
-                        <span>Année Pastorale</span>
+                        <span>Niveau</span>
                     </div>
                     <div class="info-three">
                         <span>Section</span>
@@ -145,6 +146,9 @@
                     <div class="pos-three">
                         <span>Bureau</span>
                     </div>
+                    <div class="pos-four">
+                        <span>Supprimer</span>
+                    </div>
                 </div>
                 
                 <?php
@@ -160,13 +164,18 @@
                     <div>
                         <span><?= $don3['bureauPoste'] ?></span>
                     </div>
+                    <div>
+                        <a href="../control/del-poste.php?idV=<?= $id ?>&amp;id=<?= $don3['idPoste'] ?>">
+                            <i class="fa fa-close"></i>
+                        </a>
+                    </div>
                 </div>
                 <?php
                     }
                 ?>
 
                 <div class="pos-btn">
-                    <a href="#">Ajouter un poste</a>
+                    <a href="poste.php?id=<?=$id?>">Ajouter un poste</a>
                 </div>
             </div>
             <div class="bottom-content">

@@ -1,0 +1,105 @@
+section h5 {
+    font-size: 35px;
+    text-align: center;
+    color: #c31111;
+    margin-bottom: 30px;
+}
+
+.poste-top {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.poste-top div {
+    margin-bottom: 5px;
+}
+
+.poste-top span {
+    color: #1360a0;
+}
+
+.poste-bottom {
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 10px;
+}
+
+.poste-bottom div {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.poste-bottom label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.poste-bottom input {
+    width: 120px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px 0;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.poste-bottom textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 5px;
+    resize: none;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.poste-bottom span {
+    color: rgba(0,0,0,0.7);
+}
+
+.poste-bottom button {
+    font-size: 16px;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1360a0;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: 0.2s linear;
+}
+
+.poste-bottom button:hover,
+.poste-bottom button:focus {
+    transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+    section h5 {
+        font-size: 24px;
+    }
+
+    .poste-top {
+        font-size: 14px;
+    }
+
+    .poste-bottom label {
+        font-size: 14px;
+    }
+
+    .poste-bottom input,
+    .poste-bottom textarea {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 310px) {
+    .poste-bottom {
+        width: 100%;
+    }
+
+    .poste-bottom input {
+        width: 100%;
+    }
+}
