@@ -4,6 +4,7 @@ include('dbConf.php');
 
 if (isset($_POST['ajouter'])) {
 
+    // Fiche
     $doyenne = $_POST['doyenne'];
     $section = $_POST['section'];
     $niveau = $_POST['niveau'];
