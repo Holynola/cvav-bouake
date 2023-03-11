@@ -14,7 +14,7 @@
 
     <div class="design">
         <div class="bloc-design">
-            <?php require_once '../public/php/old.html' ; ?>
+            <?php require_once '../public/php/old.php' ; ?>
             <?php require_once '../public/php/aside.html' ; ?>
         </div>
     </div>

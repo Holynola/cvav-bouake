@@ -5,17 +5,6 @@
     margin-bottom: 30px;
 }
 
-.old h5 {
-    font-size: 25px;
-    font-weight: 600;
-    margin-top: 30px;
-}
-
-.old hr {
-    width: 1px solid #000;
-    width: 20%;
-}
-
 .old div {
     margin-top: 10px;
 }
@@ -23,6 +12,7 @@
 .old a {
     font-size: 18px;
     transition: 0.2s linear;
+    text-transform: uppercase;
 }
 
 .old a:focus,
