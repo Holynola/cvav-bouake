@@ -2,11 +2,28 @@
     font-size: 35px;
     color: #c31111;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.old h5 {
+    font-size: 20px;
+    text-align: center;
     margin-bottom: 30px;
+    font-weight: 300;
 }
 
 .old div {
-    margin-top: 10px;
+    margin: 10px 0;
+}
+
+.old button {
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px 0;
 }
 
 .old a {
@@ -22,16 +39,33 @@
     transform: scale(1.1);
 }
 
+.add-btn {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.add-btn a {
+    font-size: 18px;
+    text-decoration: underline;
+    padding: 8px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
 @media (max-width: 500px) {
     .old h4 {
         font-size: 24px;
     }
 
     .old h5 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .old a {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .add-btn a {
+        font-size: 16px;
     }
 }

@@ -52,11 +52,11 @@
                 <i class="fa fa-file" aria-hidden="true"></i>
             </a>
             
-            <a href="mdf.php?id=<?=$don['idFiche']?>" title="Modifier" style="<?php if ($anneepasto != 2) echo 'display: none'; ?>">
+            <a href="mdf.php?id=<?=$don['idVaillant']?>" title="Modifier" style="<?php if ($anneepasto != 2) echo 'display: none'; ?>">
                 <i class="fa fa-pencil" aria-hidden="true"></i>
             </a>
             
-            <a href="del.php?id=<?=$don['idFiche']?>" title="Supprimer" style="<?php if ($anneepasto != 2) echo 'display: none'; ?>">
+            <a href="../control/del.php?id=<?=$don['idFiche']?>" title="Supprimer" style="<?php if ($anneepasto != 2) echo 'display: none'; ?>" class="delFiche">
                 <i class="fa fa-window-close-o" aria-hidden="true"></i>
             </a>
         </div>
@@ -65,3 +65,5 @@
         }
     ?>
 </section>
+
+<script src="../public/js/del.js"></script>

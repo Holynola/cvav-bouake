@@ -8,6 +8,9 @@ $repGen = $bdd->query('SELECT * FROM gender');
 // Doyenné
 $repDoy = $bdd->query('SELECT * FROM doyen');
 
+// Section
+$repSec = $bdd->query('SELECT * FROM section');
+
 // Level
 $repLev = $bdd->query('SELECT * FROM levels');
 

@@ -12,10 +12,7 @@
         $stmt->execute();
 
         // Récupération des données
-        $resultat = $stmt->fetch();
-
-        // Fermeture de la connexion
-        $bdd = null;
+        $resultat = $stmt->fetch();   
 
         // Stockage des valeurs dans des variables PHP
         $genre = $resultat["genre"];
@@ -28,6 +25,7 @@
         $addyear = $resultat['addyear'];
         $sante = $resultat['sante'];
 
+        $idF = $resultat['idFiche'];
         $doyenne = $resultat['doyenne'];
         $section = $resultat['section'];
         $niveau = $resultat['niveau'];
@@ -38,6 +36,17 @@
         $pnumber = $resultat['pnumber'];
         $parent = $resultat['parent'];
 
+        // Récupération de la localité de la section
+        $sl = "SELECT * FROM section WHERE idS = $section";
+        $rek = $bdd->prepare($sl);
+        $rek->execute();
+
+        // Fermeture de la connexion
+        $bdd = null;
+
+        $result = $rek->fetch();
+
+        $localite = $result['localite'];
 
     } else {
         header('Location : ../pages/admin-page.php');

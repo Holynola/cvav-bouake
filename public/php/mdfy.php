@@ -9,9 +9,9 @@
 </style>
 
 <section>
-    <h3>Ajouter une fiche</h3>
+    <h3>Modifier</h3>
 
-    <form action="../control/add-old.php" method="post" enctype="multipart/form-data">
+    <form action="../control/mdf-vvv.php" method="post" enctype="multipart/form-data">
         <div class="add-content">
             <div class="mili-content">
                 <h4>1- Militant(e)</h4>
@@ -21,6 +21,7 @@
                     <div class="input-box" style="display: none
                     ;">
                         <input type="text" name="id" id="id" value="<?= $id ?>">
+                        <input type="text" name="idF" id="idF" value="<?= $idF ?>">
                     </div>
                     <div class="input-box">
                         <span class="details">Genre</span>
@@ -73,7 +74,7 @@
 
                     <div class="input-box">
                         <span class="details">Ville/Commune/Village</span>
-                        <input type="text" name="habitation" value="<?= $localite ?>" placeholder="Lieu d'habitation" required>
+                        <input type="text" name="habitation" value="<?= $habitation ?>" placeholder="Lieu d'habitation" required>
                     </div>
 
                     <div class="input-box">
@@ -90,11 +91,7 @@
 
                     <div class="input-box">
                         <span class="details">Contact</span>
-                        <input type="tel" name="phone" value="<?php if (strlen($phone) < 10) {
-                        echo 0 . $phone;
-                    } else {
-                        echo $phone;
-                    } ?>" minlength="10" maxlength="10">
+                        <input type="tel" name="phone" value="<?= $phone ?>" minlength="10" maxlength="10">
                     </div>
 
                     <div class="input-box">
@@ -119,59 +116,56 @@
                 <hr>
 
                 <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Titre</span>
-                        <?php
-                            while ($donTle = $repTle->fetch()) {
-                        ?>
-                        <input type="radio" name="titre" value="<?= $donTle['idT'] ?>" <?php if ($titre == $donTle['idT']) echo ' checked '; ?> required>
-                        <label for="<?= $donTle['idT'] ?>"><?= $donTle['titre'] ?></label>
-                        <?php } ?>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="details">Nom et Prénoms</span>
-                        <input type="text" name="pfullname" value="<?= $pfullname ?>" style="text-transform: uppercase;" required>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="details">Profession</span>
-                        <input type="text" name="pjob" value="<?= $pjob ?>" required>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="details">Quartier</span>
-                        <input type="text" name="quartier" value="<?= $quartier ?>" required>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="details">Contact</span>
-                        <input type="tel" name="pnumber" value="<?php if (strlen($phone) < 10) {
-                        echo 0 . $pnumber;
-                    } else {
-                        echo $pnumber;
-                    } ?>" minlength="10" maxlength="10" required>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="details">Lien de parenté</span>
-                        <select name="parent" id="parent" required>
-                            <option value=""></option>
+                        <div class="input-box">
+                            <span class="details">Titre</span>
                             <?php
-                                while ($donMif = $repMif->fetch()) {
+                                while ($donTle = $repTle->fetch()) {
                             ?>
-                            <option value="<?= $donMif['idM'] ?>" <?php if ($parent == $donMif['idM']) echo 'selected'; ?>><?= $donMif['parent'] ?></option>
+                            <input type="radio" name="titre" value="<?= $donTle['idT'] ?>" <?php if ($titre == $donTle['idT']) echo ' checked '; ?> required>
+                            <label for="<?= $donTle['idT'] ?>"><?= $donTle['titre'] ?></label>
                             <?php } ?>
-                        </select>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Nom et Prénoms</span>
+                            <input type="text" name="pfullname" value="<?= $pfullname ?>" style="text-transform: uppercase;" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Profession</span>
+                            <input type="text" name="pjob" value="<?= $pjob ?>" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Quartier</span>
+                            <input type="text" name="quartier" value="<?= $quartier ?>" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Contact</span>
+                            <input type="tel" name="pnumber" value="<?= $pnumber ?>" minlength="10" maxlength="10" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Lien de parenté</span>
+                            <select name="parent" id="parent" required>
+                                <option value=""></option>
+                                <?php
+                                    while ($donMif = $repMif->fetch()) {
+                                ?>
+                                <option value="<?= $donMif['idM'] ?>" <?php if ($parent == $donMif['idM']) echo 'selected'; ?>><?= $donMif['parent'] ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
                     </div>
-                </div>
             </div>
 
             <div class="add-btn">
-                <input type="submit" name="ajouter" value="Enregistrer">
+                <input type="submit" name="ajouter" id="ajouter" value="Modifier">
             </div>
         </div>
     </form>
+    
 </section>
 
 <script src="../public/js/mdf.js"></script>
