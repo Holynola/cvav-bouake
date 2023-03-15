@@ -1,3 +1,6 @@
+<?php
+    include('../control/dbConf.php');
+?>
 <style>
     @import url("../public/css/log.css");
 </style>
@@ -6,7 +9,7 @@
     <h3 class="log-title">Se connecter</h3>
 
     <div class="box">
-        <form action="#">
+        <form action="../control/signout.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="email">E-mail</label><br>
                 <input type="text" name="email" maxlength="30" placeholder="Entrez votre adresse mail" required>
@@ -26,7 +29,7 @@
     <h3 class="sign-title">Vous n'avez pas de compte ? Créer un compte</h3>
 
     <div class="box">
-        <form action="#">
+        <form action="../control/signin.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="nom">Nom et Prénoms</label><br>
                 <input type="text" name="nom" maxlength="30" placeholder="Entrez vos noms" required>
@@ -50,17 +53,21 @@
 
             <div>
                 <label for="password">Mot de passe</label><br>
-                <input type="password" name="password" maxlength="20" placeholder="Entrez votre mot de passe" required>
+                <input type="password" name="password" id="password1" maxlength="20" placeholder="Entrez votre mot de passe" required>
             </div>
 
             <div>
                 <label for="confpassword">Confirmer Mot de passe</label><br>
-                <input type="password" name="password" maxlength="20" placeholder="Confirmer votre mot de passe" required>
+                <input type="password" name="confpassword" id="password2" maxlength="20" placeholder="Confirmer votre mot de passe" required>
             </div>
 
+            <div id="password-error"></div>
+
             <div>
-                <button type="submit" name="enregistrer">Enregistrer</button>
+                <button type="submit" name="enregistrer" id="save">Enregistrer</button>
             </div>
         </form>
     </div>
 </section>
+
+<script src="../public/js/password-check.js"></script>

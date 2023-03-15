@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../public/css/all.css">
     <link rel="stylesheet" href="../public/css/design.css">
+    <script src="../public/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <?php require_once '../public/php/header.html' ; ?>
 
     <div class="design">
         <div class="bloc-design">
-            <?php require_once '../public/php/log.html' ; ?>
+            <?php require_once '../control/add-check.php' ; ?>
+            <?php require_once '../public/php/log.php' ; ?>
             <?php require_once '../public/php/aside.html' ; ?>
         </div>
     </div>
