@@ -14,6 +14,6 @@
         header("Location: " . $url);
 
     } else {
-        header('Location : ../pages/admin-page.php');
+        header('Location: ../pages/admin-page.php');
     }
 ?>

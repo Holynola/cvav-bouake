@@ -28,7 +28,7 @@ if (isset($_POST['enregistrer'])) {
     }
 
 } else {
-    header('Location : ../pages/admin-page.php');
+    header('Location: ../pages/admin-page.php');
 }
 
 ?>

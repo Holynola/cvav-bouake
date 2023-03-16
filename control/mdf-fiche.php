@@ -41,7 +41,7 @@ if (isset($_GET['militant']) AND ($_GET['doyenne'])) {
     header("Location: " . $url);
 
 } else {
-    header('Location : ../pages/admin-page.php');
+    header('Location: ../pages/admin-page.php');
 }
 
 ?>

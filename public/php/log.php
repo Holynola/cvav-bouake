@@ -12,7 +12,7 @@
         <form action="../control/signout.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="email">E-mail</label><br>
-                <input type="text" name="email" maxlength="30" placeholder="Entrez votre adresse mail" required>
+                <input type="text" name="email" maxlength="50" placeholder="Entrez votre adresse mail" required>
             </div>
 
             <div>
@@ -48,7 +48,7 @@
 
             <div>
                 <label for="email">E-mail</label><br>
-                <input type="email" name="email" maxlength="30" placeholder="Entrez votre adresse email" required>
+                <input type="email" name="email" maxlength="50" placeholder="Entrez votre adresse email" required>
             </div>
 
             <div>

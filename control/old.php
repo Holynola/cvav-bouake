@@ -25,7 +25,7 @@ if (isset($_GET['id'])) {
     }
 
 } else {
-    header('Location : ../pages/admin-page.php');
+    header('Location: ../pages/admin-page.php');
 }
 
 

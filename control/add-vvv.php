@@ -62,5 +62,5 @@ if (isset($_POST['ajouter'])) {
     }
 
 } else {
-    header('Location : ../pages/admin-page.php');
+    header('Location: ../pages/admin-page.php');
 }
