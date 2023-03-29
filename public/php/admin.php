@@ -1,3 +1,7 @@
+<?php
+    include('../control/dbConf.php');
+    include('../control/adm-ex.php');
+?>
 <style>
     @import url("../public/css/admin.css");
 </style>
@@ -15,25 +19,55 @@
             <div class="content-four"></div>
         </div>
 
+        <?php
+            while ($donRes = $ketRes->fetch()) {
+        ?>
         <div class="compte-content">
-            <div>Koffi Konan Jean</div>
-            <div>Membre du BD</div>
-            <div>Activé</div>
+            <div><?= $donRes['nomRes'] ?></div>
             <div>
-                <a href="#" class="enable">Activer</a>
-                <a href="#" class="disable">Désactiver</a>
-            </div>
-        </div>
+            <?php
+                $poste = $donRes['statutRes'];
 
-        <div class="compte-content">
-            <div>Koné Aicha</div>
-            <div>Responsable de section</div>
-            <div>Désactivé</div>
+                switch ($poste) {
+                    case 'superadmin':
+                        echo 'Président Diocésain';
+                        break;
+
+                    case 'admin':
+                        echo 'Membre du BD';
+                        break;
+
+                    case 'user':
+                        echo 'Responsable de Doyenné';
+                        break;
+
+                    case 'client':
+                        echo 'Responsable de section';
+                        break;
+                }
+            ?>
+            </div>
             <div>
-                <a href="#" class="enable">Activer</a>
-                <a href="#" class="disable">Désactiver</a>
+            <?php
+                $etat = $donRes['etatRes'];
+
+                switch ($etat) {
+                    case 'OK':
+                        echo 'Activé';
+                        break;
+
+                    case 'KO':
+                        echo 'Désactivé';
+                        break;
+                }
+            ?>
+            </div>
+            <div>
+                <a href="#" class="enable" style="<?php if($etat == 'OK') {echo 'display: none';} ?>">Activer</a>
+                <a href="#" class="disable" style="<?php if($etat == 'KO') {echo 'display: none';} ?>">Désactiver</a>
             </div>
         </div>
+        <?php } ?>
     </div>
 
     <div class="effectif">
@@ -44,31 +78,35 @@
             <div class="eff-left">
                 <div>
                     <span class="title">Benjamins : </span>
-                    <span>000</span>
+                    <span><?= $benj ?></span>
                 </div>
                 <div>
                     <span class="title">Cadets : </span>
-                    <span>000</span>
+                    <span><?= $cade ?></span>
                 </div>
                 <div>
                     <span class="title">Ainés : </span>
-                    <span>000</span>
+                    <span><?= $aine ?></span>
                 </div>
                 <div>
                     <span class="title">Meneurs : </span>
-                    <span>000</span>
+                    <span><?= $mens ?></span>
                 </div>
                 <div>
                     <span class="title">Aspirants Accompagnateurs : </span>
-                    <span>000</span>
+                    <span><?= $aas ?></span>
                 </div>
                 <div>
                     <span class="title">Accompagnateurs : </span>
-                    <span>000</span>
+                    <span><?= $acs ?></span>
                 </div>
                 <div>
                     <span class="title">Accompagnateurs Principaux : </span>
-                    <span>000</span>
+                    <span><?= $aps ?></span>
+                </div>
+                <div>
+                    <span class="title" style="color: #1360a0">Total : </span>
+                    <span><?= $total ?></span>
                 </div>
             </div>
             <div class="eff-right">
@@ -93,31 +131,35 @@
             <div class="eff-left">
                 <div>
                     <span class="title">Benjamins : </span>
-                    <span>000</span>
+                    <span><?= $ben ?></span>
                 </div>
                 <div>
                     <span class="title">Cadets : </span>
-                    <span>000</span>
+                    <span><?= $cad ?></span>
                 </div>
                 <div>
                     <span class="title">Ainés : </span>
-                    <span>000</span>
+                    <span><?= $ain ?></span>
                 </div>
                 <div>
                     <span class="title">Meneurs : </span>
-                    <span>000</span>
+                    <span><?= $men ?></span>
                 </div>
                 <div>
                     <span class="title">Aspirants Accompagnateurs : </span>
-                    <span>000</span>
+                    <span><?= $aa ?></span>
                 </div>
                 <div>
                     <span class="title">Accompagnateurs : </span>
-                    <span>000</span>
+                    <span><?= $ac ?></span>
                 </div>
                 <div>
                     <span class="title">Accompagnateurs Principaux : </span>
-                    <span>000</span>
+                    <span><?= $ap ?></span>
+                </div>
+                <div>
+                    <span class="title" style="color: #1360a0">Total : </span>
+                    <span><?= $tot ?></span>
                 </div>
             </div>
         </div>
@@ -176,5 +218,9 @@
                 <a href="blogs.php">Plus de détails</a>
             </div>
         </div>
+    </div>
+
+    <div class="btm-div">
+        <a href="../control/logout.php">Se déconnecter</a>
     </div>
 </section>

@@ -1,5 +1,6 @@
 <?php
     include('../control/dbConf.php');
+    include('../control/add-ex.php');
 ?>
 <style>
     @import url("../public/css/log.css");
@@ -33,6 +34,24 @@
             <div>
                 <label for="nom">Nom et Prénoms</label><br>
                 <input type="text" name="nom" maxlength="30" placeholder="Entrez vos noms" required>
+            </div>
+
+            <div>
+                <label for="doyenne">Doyenné</label><br>
+                <select name="doyenne" id="doyenne" required>
+                <option value="0"></option>
+                <?php
+                    while ($donDoy = $repDoy->fetch()) {
+                ?>
+                <option value="<?= $donDoy['idD'] ?>"><?= $donDoy['doyenne'] ?></option>
+                <?php } ?>
+                </select>
+            </div>
+
+            <div>
+                <label for="section">Section de base</label><br>
+                <select name="section" id="section" required></select>
+                <option value=""></option>
             </div>
 
             <div>
@@ -70,4 +89,5 @@
     </div>
 </section>
 
+<script src="../public/js/add.js"></script>
 <script src="../public/js/password-check.js"></script>

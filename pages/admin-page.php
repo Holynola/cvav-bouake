@@ -1,3 +1,10 @@
+<?php
+    session_start();
+
+    if (!isset($_SESSION['username'])) {
+        header('Location: login.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,7 +22,7 @@
     <div class="design">
         <div class="bloc-design">
             <?php require_once '../control/add-check.php' ; ?>
-            <?php require_once '../public/php/admin.html' ; ?>
+            <?php require_once '../public/php/admin.php' ; ?>
             <?php require_once '../public/php/aside.html' ; ?>
         </div>
     </div>

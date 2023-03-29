@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION["username"])) {
+        $url = "admin-page.php";
+        header("Location: " . $url);
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

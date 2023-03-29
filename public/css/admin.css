@@ -196,3 +196,16 @@ hr {
         font-size: 14px;
     }
 }
+
+.btm-div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btm-div a {
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: #c31111;
+}
