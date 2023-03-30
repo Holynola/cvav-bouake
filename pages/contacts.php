@@ -17,6 +17,7 @@
 
     <div class="design">
         <div class="bloc-design">
+        <?php require_once '../control/add-check.php' ; ?>
             <?php require_once '../public/php/msg.php' ; ?>
             <?php require_once '../public/php/aside.html' ; ?>
         </div>

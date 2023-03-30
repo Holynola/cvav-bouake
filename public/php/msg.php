@@ -1,3 +1,6 @@
+<?php
+    include('../control/dbConf.php');
+?>
 <style>
     @import url("../public/css/msg.css");
 </style>
@@ -9,7 +12,7 @@
         <h3 class="msg-title">Envoyer un message</h3>
 
         <div class="msg-box">
-            <form action="#">
+            <form action="../control/msg-ex.php" method="post" enctype="multipart/form-data">
                 <div>
                     <label for="nom">Nom et Prénoms</label><br>
                     <input type="text" name="nom" maxlength="30" placeholder="Entrez vos noms" required>
@@ -17,7 +20,7 @@
 
                 <div>
                     <label for="profes">Profession</label><br>
-                    <input type="text" name="profes" maxlength="20" placeholder="Entrez votre profession" required>
+                    <input type="text" name="profes" maxlength="30" placeholder="Entrez votre profession" required>
                 </div>
 
                 <div>
