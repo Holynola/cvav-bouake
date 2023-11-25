@@ -60,18 +60,23 @@
                         echo 'Désactivé';
                         break;
                 }
+
+                $id = $donRes['idRes'];
             ?>
             </div>
+            
             <div>
-                <a href="#" class="enable" style="<?php if($etat == 'OK') {echo 'display: none';} ?>">Activer</a>
-                <a href="#" class="disable" style="<?php if($etat == 'KO') {echo 'display: none';} ?>">Désactiver</a>
+                <?php if (isset($stt) && $stt == "superadmin" OR $stt == "admin") { ?>
+                <a href="../control/mdf-res.php?id=<?= $id ?>&amp;etat=<?= $etat ?>&amp;stt=<?= $stt ?>" class="enable" style="<?php if($etat == 'OK') {echo 'display: none';} ?>">Activer</a>
+                <a href="../control/mdf-res.php?id=<?= $id ?>&amp;etat=<?= $etat ?>&amp;stt=<?= $stt ?>" class="disable" style="<?php if($etat == 'KO') {echo 'display: none';} ?>">Désactiver</a>
+                <?php } ?>
             </div>
         </div>
         <?php } ?>
     </div>
 
     <div class="effectif">
-        <h5>Effectifs 2022-2023</h5>
+        <h5>Effectifs 2023-2024</h5>
         <hr>
 
         <div class="eff-content">

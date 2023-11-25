@@ -16,7 +16,7 @@
 
     <div class="pasto-div">
         <select name="pasto-select" id="pasto-select"> 
-            <option value="2" <?php if($anpast == 2){echo 'selected';} ?>>2022-2023</option>
+            <option value="2" <?php if($anpast == 2){echo 'selected';} ?>>2023-2024</option>
             <option value="1" <?php if($anpast == 1){echo 'selected';} ?>>2021-2022</option>
         </select>
     </div>

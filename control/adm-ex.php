@@ -4,7 +4,7 @@ include('dbConf.php');
 
 $ketRes = $bdd->query('SELECT * FROM respo');
 
-// 2022-2023
+// 2023-2024
 // Bejamins
 $ketBen = $bdd->query('SELECT idFiche FROM fiche WHERE anpasto = 2 AND niveau = 1');
 $benj = $ketBen->rowcount();
