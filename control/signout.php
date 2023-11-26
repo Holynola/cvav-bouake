@@ -22,6 +22,7 @@ if (isset($_POST['connexion'])) {
 
     if ($stmt->rowCount() > 0) {
         $_SESSION["username"] = $email;
+        $_SESSION["statut"] = $statut;
         $url = "../pages/admin-page.php?statut=" . urldecode($statut);
         header("Location: " . $url);
     } else {

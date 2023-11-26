@@ -1,8 +1,9 @@
 <?php
     session_start();
 
-    if (isset($_SESSION["username"])) {
-        $url = "admin-page.php";
+    if (isset($_SESSION["username"]) && ($_SESSION['statut'])) {
+        $statutRes = $_SESSION['statut'];
+        $url = "admin-page.php?statut=" . urldecode($statutRes);
         header("Location: " . $url);
     }
 ?>
