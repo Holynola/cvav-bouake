@@ -8,7 +8,7 @@ date_default_timezone_set('Africa/Abidjan');
 $host = 'localhost'; // Nom de l'hôte
 $dbname = 'cav'; // Nom de la base de données
 $user = 'root'; // Nom d'utilisateur
-$pass = ''; // Mot de passe
+$pass = '101214Bureau'; // Mot de passe
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
